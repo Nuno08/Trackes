@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca:"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_marca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_marca"
+        android:layout_marginLeft="20dp"
+        android:hint="Introduza a marca do barco(opcional)"
+        />
+
+    <TextView
+        android:id="@+id/text_trib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tripulante:"
+        android:layout_below="@id/edit_marca"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_trib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_trib"
+        android:hint="Introduza o nome do atleta"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/text_escalao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escalao:"
+        android:layout_below="@id/edit_trib"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/edit_escalao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_escalao"
+        android:hint="Introduza o escalão do atleta"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <Button
+        android:id="@+id/registo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edit_escalao"
+        />
+
+</RelativeLayout>
