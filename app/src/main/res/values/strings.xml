@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PMEU</string>
+    <string name="nome">nome</string>
+    <string name="apelido">apelido</string>
+    <string name="password">password</string>
+    <string name="registo">registo</string>
+    <string name="login">login</string>
+    <string name="cancelar">cancelar</string>
+    <string name="editar">editar</string>
+    <string name="ligar_dispositivo">Ligar Dispositivo</string>
+    <string name="informaces_avancadas">Informações Avançadas</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="guardar">Guardar</string>
+</resources>
