@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/edit_marca"
         android:layout_toRightOf="@+id/text_barco"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="10dp"
         />
 
@@ -48,7 +48,49 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@+id/text_marca"
         android:layout_above="@+id/localizacao"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_escalao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escalão:"
+        android:layout_above="@id/localizacao"
         android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/edit_escalao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/text_escalao"
+        android:layout_above="@+id/localizacao"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/text_trib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tribulante:"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_above="@+id/text_escalao"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/edit_trib"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/edit_escalao"
+        android:layout_toRightOf="@+id/text_trib"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
         />
 
     <Button
