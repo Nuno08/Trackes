@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "491226495067",
+    "project_id": "pmeu-d2b05",
+    "storage_bucket": "pmeu-d2b05.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:491226495067:android:c7571f2f2bc85ea622677e",
+        "android_client_info": {
+          "package_name": "com.example.pmeu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "491226495067-v2et9uodignndf814ths2oj79fkmk7p0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnTbIKXedoNZCWBv2VrNyHYr5anXEyKYI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "491226495067-v2et9uodignndf814ths2oj79fkmk7p0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

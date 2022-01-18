@@ -13,4 +13,5 @@
     <string name="title_activity_maps">Map</string>
     <string name="guardar">Guardar</string>
     <string name="localizacao">localização</string>
+    <string name="Redirect_Login">Já tem conta criada? Faça Login</string>
 </resources>

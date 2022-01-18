@@ -58,13 +58,42 @@
         android:layout_marginLeft="20dp"
         />
 
+    <TextView
+        android:id="@+id/text_Conf_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmação de Password"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="20dp"
+        />
+
+    <EditText
+        android:id="@+id/Conf_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_Conf_password"
+        android:hint="Insira a password"
+        android:layout_marginLeft="20dp"
+        />
+
     <Button
         android:id="@+id/registo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/password"
+        android:layout_below="@+id/Conf_password"
         android:text="@string/registo"
         android:layout_marginLeft="50dp"
+        android:layout_marginTop="10dp"
         />
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registo"
+        android:text="@string/Redirect_Login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        />
+
 
 </RelativeLayout>
