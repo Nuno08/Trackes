@@ -61,7 +61,7 @@ import com.google.firebase.auth.FirebaseAuth
             if (pass != confirmPassword) {
                 Toast.makeText(this, "Password e Confirmação de Password não correspondem", Toast.LENGTH_SHORT)
                     .show()
-                return 0;
+                return
             }
 
             auth.createUserWithEmailAndPassword(nome, pass).addOnCompleteListener(this) {
