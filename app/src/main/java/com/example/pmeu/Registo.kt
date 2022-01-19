@@ -8,9 +8,11 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
-    class Registo : AppCompatActivity() {
+class Registo : AppCompatActivity() {
         lateinit var edit_text_nome: EditText
         lateinit var edit_text_apelido: EditText
         private lateinit var edit_text_password: EditText
@@ -52,7 +54,7 @@ import com.google.firebase.auth.FirebaseAuth
             val pass = edit_text_apelido.text.toString()
             val confirmPassword = edit_text_Conf_password.text.toString()
 
-            // check pass
+
             if (nome.isBlank() || pass.isBlank() || confirmPassword.isBlank()) {
                 Toast.makeText(this, "Nome e Password não podem estar vazios", Toast.LENGTH_SHORT).show()
                 return
