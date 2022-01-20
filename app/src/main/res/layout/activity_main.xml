@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <TextView
-        android:id="@+id/text_nome"
+        android:id="@+id/text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Utilizador"
@@ -17,11 +21,11 @@
         />
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/edit_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Insira o utilizador"
-        android:layout_below="@+id/text_nome"
+        android:hint="Insira o email"
+        android:layout_below="@+id/text_email"
         android:layout_marginLeft="20dp"
         />
 
@@ -30,7 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:layout_below="@id/edit_nome"
+        android:layout_below="@id/edit_email"
         android:layout_marginLeft="20dp"
         />
 
@@ -49,9 +53,18 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password"
         android:text="@string/login"
-        android:layout_marginLeft="50dp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         />
+    <TextView
+        android:id="@+id/registo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:text="@string/Redirect_Login"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        />
 
 </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

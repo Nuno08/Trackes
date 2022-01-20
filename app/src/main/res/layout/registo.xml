@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/text_nome"
+        android:id="@+id/text_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Utilizador"
+        android:text="Email"
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         />
 
     <EditText
-        android:id="@+id/edit_nome"
+        android:id="@+id/edit_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Insira o nome"
-        android:layout_below="@+id/text_nome"
-        android:layout_marginLeft="20dp"
-        />
-
-    <TextView
-        android:id="@+id/text_apelido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Apelido"
-        android:layout_below="@id/edit_nome"
-        android:layout_marginLeft="20dp"
-        />
-
-    <EditText
-        android:id="@+id/edit_apelido"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text_apelido"
-        android:hint="Insira o apelido"
+        android:hint="Insira o seu email"
+        android:layout_below="@+id/text_email"
         android:layout_marginLeft="20dp"
         />
 
@@ -45,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Password"
-        android:layout_below="@id/edit_apelido"
+        android:layout_below="@id/edit_email"
         android:layout_marginLeft="20dp"
         />
 
@@ -97,3 +85,4 @@
 
 
 </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

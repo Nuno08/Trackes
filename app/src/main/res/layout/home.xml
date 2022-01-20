@@ -11,6 +11,7 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
        android:id="@+id/imagem"
+       android:src="@mipmap/ic_remo_foreground"
        />
 
     <TextView
@@ -19,6 +20,7 @@
         android:layout_toRightOf="@+id/imagem"
         android:text="VRL- Viana Remadores do Lima"
         android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
         />
 
 </RelativeLayout>

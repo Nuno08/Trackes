@@ -12,9 +12,9 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
 
 
+
 class Registo : AppCompatActivity() {
-        lateinit var edit_text_nome: EditText
-        lateinit var edit_text_apelido: EditText
+        lateinit var edit_text_email: EditText
         private lateinit var edit_text_password: EditText
         private lateinit var edit_text_Conf_password: EditText
         private lateinit var registo: Button
@@ -28,8 +28,7 @@ class Registo : AppCompatActivity() {
             setContentView(R.layout.registo)
 
             // View Bindings
-            edit_text_nome = findViewById(R.id.edit_nome)
-            edit_text_apelido = findViewById(R.id.edit_apelido)
+            edit_text_email = findViewById(R.id.edit_email)
             edit_text_password = findViewById(R.id.password)
             edit_text_Conf_password = findViewById(R.id.Conf_password)
             registo = findViewById(R.id.registo)
@@ -43,19 +42,19 @@ class Registo : AppCompatActivity() {
 
 
             tvRedirectLogin.setOnClickListener {
-                val intent = Intent(this, Login::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
             }
 
         }
 
         private fun signUpUser() {
-            val nome = edit_text_nome.text.toString()
-            val pass = edit_text_apelido.text.toString()
+            val email = edit_text_email.text.toString()
+            val pass = edit_text_password.text.toString()
             val confirmPassword = edit_text_Conf_password.text.toString()
 
 
-            if (nome.isBlank() || pass.isBlank() || confirmPassword.isBlank()) {
+            if (email.isBlank() || pass.isBlank() || confirmPassword.isBlank()) {
                 Toast.makeText(this, "Nome e Password não podem estar vazios", Toast.LENGTH_SHORT).show()
                 return
             }
@@ -66,7 +65,7 @@ class Registo : AppCompatActivity() {
                 return
             }
 
-            auth.createUserWithEmailAndPassword(nome, pass).addOnCompleteListener(this) {
+            auth.createUserWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     Toast.makeText(this, "Registo feito com sucesso", Toast.LENGTH_SHORT).show()
                     finish()
